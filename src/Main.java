@@ -6,6 +6,8 @@ public class Main {
         account.addMoney(100);
         account.withdrawMoney(50);
         System.out.println("Your balance is:"+ account.checkBalance());
-        System.out.println("The interest for the year is " + account.calculateInterest());
+        System.out.println("The interest for the year is " + account.calculateInterest(2));
+
+        account.setPassword("Angad2", "Angad");
     }
 }

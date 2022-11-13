@@ -4,5 +4,5 @@ public interface Bank {
     public void addMoney(int money);
     public boolean withdrawMoney(int money);
     public int checkBalance();
-    public double calculateInterest();
+    public double calculateInterest(int year);
 }

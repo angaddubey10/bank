@@ -1,43 +1,13 @@
 package src;
 
-public class GareebBank implements Bank{
-    private int accountNo;
-    private String name;
-    private int balance;
+public class AmeerBank implements Bank{
+    int accountNo;
+    String name;
+    int balance;
 
-    private String password="Prabira";
+    double interestRate;
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAccountNo() {
-        return accountNo;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getBalance() {
-        return balance;
-    }
-    //Getter Setters
-
-    public void setPassword(String newPassword, String oldPassword){
-        if(oldPassword==this.password){
-            this.password = newPassword;
-            System.out.println("Password changed successfully!");
-        }
-        else{
-            System.out.println("Incorrect Old Password");
-        }
-
-    }
-
-    private double interestRate;
-
-    public GareebBank(int accountNo, String name, int balance, double interestRate) {
+    public AmeerBank(int accountNo, String name, int balance, double interestRate) {
         this.accountNo = accountNo;
         this.name = name;
         this.balance = balance;
